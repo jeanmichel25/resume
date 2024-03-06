@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #282c34;
+  margin-bottom: 10%;
 }
 
 .App-logo {
@@ -13,15 +14,62 @@
   }
 }
 
+@font-face {
+  font-family: 'MonoLisaRegular';
+  src: local('MonoLisaRegular'), url('./fonts/MonoLisaRegular.ttf') format('truetype');
+}
+
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
+  font-family: 'MonoLisaRegular', fallback;
+}
+
+.Header-div {
+  flex-direction: column;
+  margin: auto;
+  font-family: 'MonoLisaRegular', fallback;
+  color: white;
+}
+
+.Resume {
+  color: white;
+  background-color: #282c34;
+}
+
+body {
+  color: white;
+  background-color: #282c34;
+}
+
+.Info-block {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: 'MonoLisaRegular', fallback;
+  color: white;
+}
+
+.Block-title {
+  font-size: 2em;
+  font-weight: lighter;
+  color: #fd9855;
+  margin-bottom: 0;
+}
+
+.Block-subtitle {
+  font-size: 2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+.Block-text {
+  font-size: 2em;
+  font-weight: 200;
+  color: rgb(167, 167, 167);
 }
 
 .App-link {
