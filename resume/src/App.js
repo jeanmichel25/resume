@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { ReactComponent as GitHubSvg } from './assets/icons/github.svg';
+import { ReactComponent as LinkedInSvg } from './assets/icons/linkedin.svg';
 import './App.css';
 import { TypeAnimation } from 'react-type-animation';
-import { RevealText, SlideIn } from './MotionComponents.tsx';
+import { RevealText, DelayedReveal, VeryDelayedReveal, SlideIn } from './MotionComponents.tsx';
+import { EducationComponent, WorkComponent, HackathonComponent, SchoolProjectsComponent } from './ResumeComponents.tsx';
 
 function App() {
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div className="App">
       <header className="App-header">
@@ -14,13 +18,13 @@ function App() {
               1000,
               'Hi, I am Jean-Mochel',
               500,
-              'Hi, I am Jean-Michel Alturk.',
+              'Hi, I am Jean-Michel.',
               1000
             ]}
             wrapper="span"
             speed={50}
             cursor={true}
-            style={{ fontSize: '5vw' }}
+            className="large-text"
             repeat={0}
           />
           <br />
@@ -30,100 +34,39 @@ function App() {
               'A Software Engineer',
               1000
             ]}
-            // wrapper="span"
             speed={50}
             cursor={false} 
-            style={{ fontSize: '4vw' }}
+            className="small-text"
             repeat={0}
           />
+        </div>
+        <div className='svg-container'>
+          {/* <p className='links'>Links:</p> */}
+          <DelayedReveal>
+            <a href="https://github.com/jeanmichel25" target="_blank" rel="noreferrer">
+              <GitHubSvg className="github"/>
+            </a>
+          </DelayedReveal>
+          <VeryDelayedReveal>
+            <a href="https://www.linkedin.com/in/jean-michel-alturk/" target="_blank" rel="noreferrer">
+              <LinkedInSvg className="linkedin"/>
+            </a>
+          </VeryDelayedReveal>
         </div>
       </header>
       <br />
       <br />
       <div className='Resume'>
-        <div className='Info-block' style={{ textAlign: 'left', width: '95%' }}>
-          <RevealText>
-            <h1 className='Block-title'>Education</h1>
-          </RevealText>
-          <SlideIn>
-            <h2 className='Block-text'>Aug 2019 - Dec 2023</h2>
-            <h2 className='Block-subtitle'>Bachelor's in Engineering: Software Engineering</h2>
-            <h2 className='Block-subtitle'>Specialized in Data Science and A.I.</h2>
-            <h2 className='Block-text'>École Polytechnique Montréal</h2>
-          </SlideIn>
-        </div>
+        <EducationComponent />
         <br />
         <br />
-        <div className='Info-block' style={{ textAlign: 'left', width: '95%' }}>
-          <RevealText>
-            <h1 className='Block-title'>Work Experience</h1>
-          </RevealText>
-          <SlideIn>
-            <h2 className='Block-text'>Aug 2023 - Dec 2023</h2>
-            <h2 className='Block-subtitle'>Software Engineer</h2>
-            <h2 className='Block-text'>Freely</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>May 2021 - Dec 2021</h2>
-            <h2 className='Block-subtitle'>Engineering Co-op Intern</h2>
-            <h2 className='Block-text'>TELUS</h2>
-          </SlideIn>
-        </div>
+        <WorkComponent />
         <br />
         <br />
-        <div className='Info-block' style={{ textAlign: 'left', width: '95%' }}>
-          <RevealText>
-            <h1 className='Block-title'>Hackathons</h1>
-          </RevealText>
-          <SlideIn>
-            <h2 className='Block-text'>Sep 2019</h2>
-            <h2 className='Block-subtitle'>LH Games</h2>
-            <h2 className='Block-text'>École Polytechnique Montréal</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>Jan 2020</h2>
-            <h2 className='Block-subtitle'>Hackatown </h2>
-            <h2 className='Block-text'>École Polytechnique Montréal</h2>
-          </SlideIn>
-        </div>
+        <HackathonComponent />
         <br />
         <br />
-        <div className='Info-block' style={{ textAlign: 'left', width: '95%' }}>
-          <RevealText>
-            <h1 className='Block-title'>School Projects</h1>
-          </RevealText>
-          <SlideIn>
-            <h2 className='Block-text'>Sep 2023 - Dec 2023</h2>
-            <h2 className='Block-subtitle'>Cloud Computing class</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>April 2023</h2>
-            <h2 className='Block-subtitle'>Diamond price predictor</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>Jan 2023 – April 2023</h2>
-            <h2 className='Block-subtitle'>Data visualization project</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>Jan 2022 – May 2022</h2>
-            <h2 className='Block-subtitle'>Web/mobile app project with online capabilities</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>Jan 2021 – May 2021</h2>
-            <h2 className='Block-subtitle'>Web Development Project</h2>
-          </SlideIn>
-          <br />
-          <SlideIn>
-            <h2 className='Block-text'>Jan 2020 – May 2020</h2>
-            <h2 className='Block-subtitle'>Embedded System Project</h2>
-          </SlideIn>
-        </div>
+        <SchoolProjectsComponent />
         <br />
         <br />
         <div className='Info-block' style={{ textAlign: 'left', width: '95%' }}>

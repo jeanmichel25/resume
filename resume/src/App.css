@@ -16,20 +16,93 @@
 
 @font-face {
   font-family: 'MonoLisaRegular';
-  src: local('MonoLisaRegular'), url('./fonts/MonoLisaRegular.ttf') format('truetype');
+  src: local('MonoLisaRegular'), url('./assets/fonts/MonoLisaRegular.ttf') format('truetype');
+}
+
+.large-text {
+  font-size: 2.75em;
+}
+
+.small-text {
+  font-size: 1.5em;
+}
+
+
+.svg-container {
+  margin-top: 70px;
+  align-self: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+@media (min-width: 850px) {
+  .large-text {
+    font-size: 5vw;
+  }
+
+  .small-text {
+    font-size: 3vw;
+  }
+
+  .svg-container {
+    margin-top: 150px;
+    align-self: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+  }
+}
+
+.links {
+  font-size: 35px;
+}
+
+.github {
+  margin-top: 8px;
+  cursor: pointer;
+  fill: white;
+  width: 80px;
+  height: 80px;
+}
+
+.github:hover {
+  fill: #a087c5;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+}
+
+.linkedin {
+  fill: white;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  transition: 0.2s;
+}
+
+.linkedin:hover {
+  fill: rgb(97, 184, 255);
+  transition: 0.2s;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
 }
 
 .App-header {
   min-height: 100vh;
+  flex-direction: column;
   display: flex;
-  /* font-size: calc(10px + 2vmin); */
   color: white;
   font-family: 'MonoLisaRegular', fallback;
 }
 
 .Header-div {
-  flex-direction: column;
-  margin: auto;
+  margin-top: 17%;
+  align-self: center;
   font-family: 'MonoLisaRegular', fallback;
   color: white;
 }
@@ -53,27 +126,104 @@ body {
 }
 
 .Block-title {
-  font-size: 2em;
+  font-size: 30px;
   font-weight: lighter;
   color: #fd9855;
   margin-bottom: 0;
 }
 
+.Detail-block-title {
+  font-size: 30px;
+  font-weight: lighter;
+  color: rgb(167, 167, 167);
+  margin-bottom: 0;
+}
+
 .Block-subtitle {
-  font-size: 2em;
+  font-size: 30px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 900;
 }
 
 .Block-text {
-  font-size: 2em;
+  font-size: 30px;
   font-weight: 200;
   color: rgb(167, 167, 167);
 }
 
-.App-link {
-  color: #61dafb;
+.resume-block {
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  font-size: 18px;
+}
+
+.Clickable-block {
+  cursor: pointer;
+  transition: 0.2s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 1;
+  background-color: #282c34;
+  width: 40vw;
+}
+
+.Clickable-block:hover {
+  background-color: #1a1d22;
+  transition: 0.2s;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+.Details-block {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  font-family: 'MonoLisaRegular', fallback;
+  color: white;
+  background-color: #282c34;
+  transform: translateX(-300%);
+  transition: transform 0.3s ease-out;
+  z-index: 0;
+  width: 53vw;
+}
+
+.Details-block.expanded {
+  transform: translateX(0);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1d22;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(167, 167, 167);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+  background: #fd9855;
+  border-radius: 10px;
+}
+
+.project-link {
+  color: rgb(97, 184, 255);
 }
 
 @keyframes App-logo-spin {
