@@ -7,7 +7,6 @@ import { RevealText, DelayedReveal, VeryDelayedReveal, SlideIn } from './MotionC
 import { EducationComponent, WorkComponent, HackathonComponent, SchoolProjectsComponent } from './ResumeComponents.tsx';
 
 function App() {
-  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div className="App">
       <header className="App-header">
