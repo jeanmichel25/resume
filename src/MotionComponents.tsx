@@ -16,7 +16,7 @@ export const RevealText = ({children, width = "fit-content"}: Props) => {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView]);
+    }, [isInView, mainControls]);
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
@@ -45,7 +45,7 @@ export const DelayedReveal = ({children, width = "fit-content"}: Props) => {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView]);
+    }, [isInView, mainControls]);
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
@@ -74,7 +74,7 @@ export const VeryDelayedReveal = ({children, width = "fit-content"}: Props) => {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView]);
+    }, [isInView, mainControls]);
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
@@ -103,7 +103,7 @@ export const SlideIn = ({children, width = "fit-content"}: Props) => {
         if (isInView) {
             mainControls.start("visible");
         }
-    }, [isInView]);
+    }, [isInView, mainControls]);
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
