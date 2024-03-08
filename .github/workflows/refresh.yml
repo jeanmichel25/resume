@@ -10,7 +10,5 @@ jobs:
       - name: Trigger GitHub pages rebuild
         run: |
           curl --fail --request POST \
-            --url  https://api.github.com/repos/jeanmichel25/resume/pages/deployments \
-            --header "Authorization: Bearer $USER_TOKEN"
-        env:
-          USER_TOKEN: ${{ secrets.USER_TOKEN }}
+            --url  https://api.github.com/repos/<your-username>/<your-repo>/pages/builds \
+            --header "Authorization: Bearer ${{ secrets.USER_TOKEN }}"
