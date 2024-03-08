@@ -249,3 +249,47 @@ export function SchoolProjectsComponent() {
         </div>
     );
 }
+
+export function PersonalProjectsComponent() {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+  return (
+    <div className='Info-block' style={{ textAlign: 'left', marginLeft: '20px' }}>
+        <RevealText>
+            <h1 className='Block-title'>Personal Projects</h1>
+        </RevealText>
+        <SlideIn>
+            <div className='resume-block'>
+                <div  className='Clickable-block' onClick={() => setIsExpanded(!isExpanded)}>
+                    <h2 className='Block-text'>March 2024</h2>
+                    <h2 className='Block-subtitle'>This Web App 😊</h2>
+                </div>
+                <div className={`Details-block ${isExpanded ? 'expanded' : ''}`}>
+                    <h1 className='Detail-block-title'>Details</h1>
+                    <ul>
+                    <li>Developed an online resume web application using React and Node.Js.</li>
+                    <li>Pushed new versions to GitHub.</li>
+                    </ul>
+                </div>
+            </div>
+        </SlideIn>
+        <br />
+        <SlideIn>
+            <div className='resume-block'>
+                <div  className='Clickable-block' onClick={() => setIsExpanded2(!isExpanded2)}>
+                    <h2 className='Block-text'>Dec 2023 - Present</h2>
+                    <h2 className='Block-subtitle'>Social scheduler application</h2>
+                </div>
+                <div className={`Details-block ${isExpanded2 ? 'expanded' : ''}`}>
+                    <h1 className='Detail-block-title'>Details</h1>
+                    <ul>
+                    <li>Developing the application for Web, iOS and Android that allows users to sign up and schedule meetups with friends.</li>
+                    <li>Developed using the Flutter framework (Dart), Express and Node.js for the server and Firebase NoSQL database.</li>
+                    <li>Developed in an Agile lifecycle, using Jira SCRUM board to keep track of tasks and GitHub for version control.</li>
+                    </ul>
+                </div>
+            </div>
+        </SlideIn>
+    </div>
+  );
+}

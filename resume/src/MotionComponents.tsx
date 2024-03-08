@@ -56,7 +56,7 @@ export const DelayedReveal = ({children, width = "fit-content"}: Props) => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.5, delay: 6.6}}
+                transition={{ duration: 0.5, delay: 5.1}}
             >
                 {children}
             </motion.div>
@@ -85,7 +85,7 @@ export const VeryDelayedReveal = ({children, width = "fit-content"}: Props) => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{ duration: 0.5, delay: 6.7}}
+                transition={{ duration: 0.5, delay: 5.2}}
             >
                 {children}
             </motion.div>
