@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef  } from 'react';
+import React, { useRef  } from 'react';
 import { ReactComponent as GitHubSvg } from './assets/icons/github.svg';
 import { ReactComponent as LinkedInSvg } from './assets/icons/linkedin.svg';
 import './App.css';
 import { TypeAnimation } from 'react-type-animation';
-import { DelayedReveal, VeryDelayedReveal, SlideIn } from './MotionComponents.tsx';
+import { DelayedReveal, VeryDelayedReveal } from './MotionComponents.tsx';
 import { EducationComponent, WorkComponent, HackathonComponent, SchoolProjectsComponent, PersonalProjectsComponent } from './ResumeComponents.tsx';
 import { LottieScrollDown } from './LottieComponents.tsx';
 

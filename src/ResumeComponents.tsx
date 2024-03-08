@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import { RevealText, DelayedReveal, VeryDelayedReveal, SlideIn } from './MotionComponents.tsx';
+import { RevealText, SlideIn } from './MotionComponents.tsx';
 
 export function EducationComponent() {
     const [isExpanded, setIsExpanded] = useState(false);
