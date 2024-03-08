@@ -1,8 +1,7 @@
 name: Refresh
 
-on:
-  schedule:
-    - cron: '*/5 * * * *'  # every 5 minutes
+on: push
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
