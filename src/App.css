@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 80vw;
+    width: 90vw;
   }
 
   .Block-subtitle {
@@ -116,6 +116,22 @@
     z-index: 1;
     background-color: #282c34;
     width: auto;
+  }
+
+  .arrow {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-315deg);
+    margin-left: 10px;
+    transition: transform 0.2s ease-out;
+    margin-right: 30px;
+  }
+
+  .arrow.rotate {
+    transform: rotate(-135deg);
   }
   
   .Details-block {
@@ -263,6 +279,22 @@
     padding-left: 20px;
     z-index: 1;
   }
+
+  .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+    transition: transform 0.2s ease-out;
+    margin-right: 30px;
+  }
+  
+  .arrow.rotate {
+    transform: rotate(-225deg);
+  }
   
   .Details-block {
     display: flex;
@@ -299,6 +331,14 @@
     margin-bottom: 0;
     margin-left: 20px;
   }
+}
+
+.date-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
 }
 
 .scroll-down {
