@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { motion, useInView, useAnimation } from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 
 interface Props {
     children: JSX.Element;
@@ -121,3 +122,56 @@ export const SlideIn = ({children, width = "fit-content"}: Props) => {
         </div>
     );
 }
+
+export const WriteText = ({children, width = "fit-content"}: Props) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
+
+    return (
+        <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
+            <div className='more-details'>
+                {isInView && <TypeAnimation
+                sequence={[
+                    "Here's a little more about me.",
+                    200,
+                    "Here's a little more about me..",
+                    200,
+                    "Here's a little more about me...",
+                ]}
+                wrapper="span"
+                speed={50}
+                cursor={false}
+                className="small-text"
+                repeat={0}
+                />}
+            </div>
+        </div>
+    );
+};
+
+export const Languages = ({children, width = "fit-content"}: Props) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once: true});
+
+    return (
+        <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
+            {isInView && <TypeAnimation
+              sequence={[
+                2000,
+                "I speak العربية",
+                200,
+                "I speak arabic",
+                200,
+                "I speak arabic, english et Français",
+                200,
+                "I speak arabic, english and french"
+              ]}
+              wrapper="span"
+              speed={50}
+              cursor={false}
+              className="small-text"
+              repeat={0}
+            />}
+        </div>
+    );
+};

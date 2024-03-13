@@ -3,15 +3,20 @@ import { ReactComponent as GitHubSvg } from './assets/icons/github.svg';
 import { ReactComponent as LinkedInSvg } from './assets/icons/linkedin.svg';
 import './App.css';
 import { TypeAnimation } from 'react-type-animation';
-import { DelayedReveal, VeryDelayedReveal } from './MotionComponents.tsx';
-import { EducationComponent, WorkComponent, HackathonComponent, SchoolProjectsComponent, PersonalProjectsComponent } from './ResumeComponents.tsx';
+import { DelayedReveal, VeryDelayedReveal, WriteText, Languages } from './MotionComponents.tsx';
+import { EducationComponent, WorkComponent, HackathonComponent, SchoolProjectsComponent, PersonalProjectsComponent, ExtracurricularComponent } from './ResumeComponents.tsx';
 import { LottieScrollDown } from './LottieComponents.tsx';
 
 function App() {
   const resumeRef = useRef(null);
+  const aboutMeRef = useRef(null);
 
   const scrollToResume = () => {
     resumeRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToAboutMe = () => {
+    aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -80,6 +85,21 @@ function App() {
         <br />
         <br />
         <PersonalProjectsComponent />
+        <br />
+        <br />
+        <ExtracurricularComponent />
+        <br />
+        <br />
+      </div>
+      <br />
+      <br />
+      <div className='About-me' ref={aboutMeRef}>
+        <div className='text-div'>
+          <WriteText />
+        </div>
+        <div className='text-div'>
+          <Languages />
+        </div>
       </div>
     </div>
   );
