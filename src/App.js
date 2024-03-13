@@ -15,10 +15,6 @@ function App() {
     resumeRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToAboutMe = () => {
-    aboutMeRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="App">
       <header className="App-header">
