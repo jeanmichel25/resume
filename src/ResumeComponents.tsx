@@ -101,33 +101,6 @@ export function WorkComponent() {
     );
 }
 
-export function HackathonComponent() {
-  return (
-    <div className='Info-block' style={{ textAlign: 'left', marginLeft: '20px' }}>
-      <RevealText>
-        <h1 className='Block-title'>Hackathons</h1>
-      </RevealText>
-      <ResumeComponent
-          date="Jan 2020"
-          title="Hackatown"
-          subtitle={null}
-          location="École Polytechnique Montréal"
-          details={["School Hackathon where teams had to develop a solution to help the environment. Programmed in C#."]}
-          detailsTitle="Details"
-        />
-      <br />
-      <ResumeComponent
-          date="Sep 2019"
-          title="LH Games"
-          subtitle={null}
-          location="École Polytechnique Montréal"
-          details={["School Hackathon where teams develop an AI player for a game like “Paper.io”. Programmed in Java."]}
-          detailsTitle="Details"
-        />
-    </div>
-  );
-}
-
 export function ProjectsComponent() {
     return (
         <div className='Info-block' style={{ textAlign: 'left', marginLeft: '20px' }}>
