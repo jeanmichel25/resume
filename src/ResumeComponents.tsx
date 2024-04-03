@@ -59,24 +59,42 @@ export function WorkComponent() {
           title="Software Engineer"
           subtitle={null}
           location="Freely"
-          details={["Developed Freely mobile application (job search application for iOS and Android using Dart and Flutter)", 
-          "Team SCRUM master", 
-          "Using Firebase NoSQL Database as the backend to fetch and store data.",
-          "Displaying strong leadership skills by encouraging the team members to reach a common goal, actively listening to feedback, organizing and leading meetings and ensuring that tasks were properly completed before the deadline."]}
+          details={["Led the frontend development of the Freely job search mobile application.", 
+          "Developed a cross-platform application compatible with iOS and Android devices using Dart and Flutter, applying principles of SDLC and methodologies like Agile.", 
+          "Implemented Firebase NoSQL Database for efficient data storage and retrieval, enhancing application performance.",
+          "Adopted Google’s Material UI Design Language to deliver a modern, sleek, and responsive user interface, improving user experience.",
+          "Integrated a chat functionality developed with sockets for seamless and real-time message sending and reception, enabling users to chat with potential employers.",
+          "Incorporated a notification system using Firebase Cloud Messaging into the application, keeping users updated about important messages and job alerts.",
+          "Organized and led team meetings as the Scrum Master, ensuring smooth project progression and adherence to requirements and deadlines.",
+          "Frequently met with the client to provide updates on the newest features and seek feedback, ensuring the product metclient expectations and needs."
+          ]}
           detailsTitle="Details"
         />
         <br />
+        <ResumeComponent
+          date="Jan 2023 – April 2023"
+          title="Data Analyst"
+          subtitle={null}
+          location="Sports AI"
+          details={["Conducted comprehensive data analysis on the performance of teams during World Cup 2022, allowing for a deeper understanding of the correlation between football statistics and ultimately lead to better decision making by coaches.", 
+          "Developed data visualization tools using Python and Plotly, improving data literacy.", 
+          "Managed a team of six engineers, ensuring project milestones were met on time.",
+          <a href="https://inf8808-project.onrender.com/" target="_blank" rel="noreferrer" className='project-link'><li>Click here to view project</li></a>
+          ]}
+          detailsTitle="Details"
+          />
+          <br />
         <ResumeComponent
           date="May 2021 - Dec 2021"
           title="Engineering Co-op Intern"
           subtitle={null}
           location="TELUS"
           details={["Full stack Web developer for the RAN Capacity team. Worked in an Agile environment", 
-          "Used Splunk and SQL to collect data on mobility site congestion and used Excel tools to analyze data to help optimize the congestion prediction algorithm.", 
-          "Experience working with relational databases and creating database tables.",
-          "Used React and Redux to pinpoint planned mobility sites on a map. SQL was used to display each site’s information such as completion date and band type when selected.",
+          "Used Splunk and SQL to collect data on mobility site congestion and used Excel tools to analyze data and optimized the prediction algorithm", 
+          "Created multiple relational database tables to store newly calculated data relating to predicted network traffic",
+          "Designed and implemented React and Redux components to visualize mobility site data, improving mobility site resource management",
           "Used Jira extensively to show the team the status of each task assigned to me.",
-          "Used Google Cloud Platform to deploy new web app versions."]}
+          "Deployed new versions of the web application on Google Cloud Platform, ensuring seamless user experiences."]}
           detailsTitle="Details"
         />
       </div>
@@ -142,9 +160,18 @@ export function ProjectsComponent() {
             title="Project Scaling Databases and Implementing Cloud Design Patterns"
             subtitle={null}
             location={null}
-            details={["Experience deploying Dockerized applications to AWS instances, creating load balancers, etc. using Terraform.", 
-            "Experience applying software design patterns in a cloud environment, such as Proxy, Gatekeeper, etc.", 
-            "Highest grade in the class with an average of 96.8%."]}
+            details={["Created and Dockerized Python Flask applications to AWS instances, creating load balancers, etc. using Terraform.", 
+            "Implemented cloud design patterns to ensure secure and efficient data transmission, resulting in a 57.5% improvement in SQL performance."]}
+            detailsTitle="Details"
+          />
+          <br />
+          <ResumeComponent
+            date="Sep 2023 - Dec 2023"
+            title="Abalone game AI"
+            subtitle={null}
+            location={null}
+            details={["Engineered an AI bot capable of playing the board game 'Abalone' using Python and advanced adversarial algorithms, achieving a 70% performance improvement through heuristic optimization.", 
+            "Rigorously tested several algorithms such as Minimax and Alpha-Beta, as well as various heuristics to ensure the best algorithm was selected.",]}
             detailsTitle="Details"
           />
           <br />
@@ -153,64 +180,22 @@ export function ProjectsComponent() {
             title="Diamond price predictor"
             subtitle={null}
             location={null}
-            details={["Implemented a machine learning algorithm that accurately predicts the price of  diamonds based on their attributes.", 
-            "Used a previous dataset to feed the machine learning model.", 
-            "Programmed in Julia."]}
+            details={["Developed a machine learning algorithm in Julia to accurately predict diamond prices based on attributes.", 
+            "Created Data Visualizations to accurately see the correlation between different variables, helping to choose which algorithm, such as linear regression or Bayesian inference among others, is best suited for the prediction of values",]}
             detailsTitle="Details"
           />
           <br />
           <ResumeComponent
-            date="Jan 2023 – April 2023"
-            title="Data visualization project"
+            date="Jan 2021 – May 2022"
+            title="Picass.io art canvas app"
             subtitle={null}
             location={null}
-            details={["In depth data analysis of the Argentinian national team’s performance during the 2022 World Cup, mandated by the Montreal based company Sports AI.", 
-            "Used Python to develop the app, Pandas framework to collect and sort data and Plotly to create graphs and charts.", 
-            "Worked in a team of 6 engineers. Displayed leadership skills by organizing and leading meetings and ensuring that the project is being completed properly and on time. Used GitLab to push changes.",
-            <a href="https://inf8808-project.onrender.com/" target="_blank" rel="noreferrer" className='project-link'><li>Click here to view project</li></a>
-          ]}
+            details={["Led the development of a real-time collaborative art application, incorporating socket-based communication and Agile project management methodologies.", 
+            "Utilized Kotlin for Android version and Angular with TypeScript for Windows version, demonstrating proficiency in mobile and web development frameworks", 
+            "Developed a test suite for the application, including unit tests and integration tests, to ensure robustness and accuracy.",]}
             detailsTitle="Details"
           />
           <br />
-          <ResumeComponent
-            date="Jan 2022 – May 2022"
-            title="Web/mobile app with social features"
-            subtitle={null}
-            location={null}
-            details={["A continuation of the web design project from the previous year, with added online collaboration features and cross-platform capabilities between Android and Windows.", 
-            "User modifications were done in real time by pushing each brushstroke to a Firebase real time database which were then visible to each user of the application.", 
-            "Used my leadership skills to organize and manage the project throughout the semester.",
-            "Used Jira to assign tasks and to indicate their completion.",
-            "Used Kotlin to develop the Android version. This helped me learn how to implement features involving an Android device’s hardware as well as experience developing a mobile application.",
-            "Every change was pushed to GitLab."]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="Jan 2021 – May 2021"
-            title="Web Development Project"
-            subtitle={null}
-            location={null}
-            details={["Creating a web app like MS Paint where users can create digital art.", 
-            "Showed strong leadership skills by encouraging the team members to reach a common goal, actively listening to feedback, organizing and leading meetings and ensuring that tasks were properly completed before the deadline.", 
-            "Gained a lot of experience working in a team of 6 engineers on a 4 month-long project.",
-            "The application was developed in TypeScript using the Angular framework.",
-            "Every change was tested in a development GitLab branch before being deployed to the main branch.",
-            "Developed a test suite for the application, including unit tests and integration tests."]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="Jan 2020 – May 2020"
-            title="Embedded System Project"
-            subtitle={null}
-            location={null}
-            details={["Programming a robot to do specific tasks such as detecting and avoiding obstacles (C and C++).", 
-            "Experience working in a team on a big project.", 
-            "Used VMWare running Linux to test the functionality of the robot while the robot was not available for use.",
-            "Experience integrating software changes to the physical robot (Arduino)."]}
-            detailsTitle="Details"
-          />
         </div>
     );
 }
