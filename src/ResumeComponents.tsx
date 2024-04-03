@@ -94,7 +94,7 @@ export function HackathonComponent() {
           title="Hackatown"
           subtitle={null}
           location="École Polytechnique Montréal"
-          details={["School Hackathon where teams had to develop a solution to help the environment. Programmed in C++."]}
+          details={["School Hackathon where teams had to develop a solution to help the environment. Programmed in C#."]}
           detailsTitle="Details"
         />
       <br />
@@ -110,97 +110,13 @@ export function HackathonComponent() {
   );
 }
 
-export function SchoolProjectsComponent() {
+export function ProjectsComponent() {
     return (
         <div className='Info-block' style={{ textAlign: 'left', marginLeft: '20px' }}>
           <RevealText>
-            <h1 className='Block-title'>School Projects</h1>
+            <h1 className='Block-title'>Projects</h1>
           </RevealText>
           <ResumeComponent
-            date="Sep 2023 - Dec 2023"
-            title="Cloud Computing class"
-            subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["Experience deploying Dockerized applications to AWS instances, creating load balancers, etc. using Terraform.", 
-            "Experience applying software design patterns in a cloud environment, such as Proxy, Gatekeeper, etc.", 
-            "Highest grade in the class with an average of 96.8%."]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="April 2023"
-            title="Diamond price predictor"
-            subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["Implemented a machine learning algorithm that accurately predicts the price of  diamonds based on their attributes.", 
-            "Used a previous dataset to feed the machine learning model.", 
-            "Programmed in Julia."]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="Jan 2023 – April 2023"
-            title="Data visualization project"
-            subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["In depth data analysis of the Argentinian national team’s performance during the 2022 World Cup, mandated by the Montreal based company Sports AI.", 
-            "Used Python to develop the app, Pandas framework to collect and sort data and Plotly to create graphs and charts.", 
-            "Worked in a team of 6 engineers. Displayed leadership skills by organizing and leading meetings and ensuring that the project is being completed properly and on time. Used GitLab to push changes.",
-            <a href="https://inf8808-project.onrender.com/" target="_blank" rel="noreferrer" className='project-link'><li>Click here to view project</li></a>
-          ]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="Jan 2022 – May 2022"
-            title="Web/mobile app with social features"
-            subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["A continuation of the web design project from the previous year, with added online collaboration features and cross-platform capabilities between Android and Windows.", 
-            "User modifications were done in real time by pushing each brushstroke to a Firebase real time database which were then visible to each user of the application.", 
-            "Used my leadership skills to organize and manage the project throughout the semester.",
-            "Used Jira to assign tasks and to indicate their completion.",
-            "Used Kotlin to develop the Android version. This helped me learn how to implement features involving an Android device’s hardware as well as experience developing a mobile application.",
-            "Every change was pushed to GitLab."]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="Jan 2021 – May 2021"
-            title="Web Development Project"
-            subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["Creating a web app like MS Paint where users can create digital art.", 
-            "Showed strong leadership skills by encouraging the team members to reach a common goal, actively listening to feedback, organizing and leading meetings and ensuring that tasks were properly completed before the deadline.", 
-            "Gained a lot of experience working in a team of 6 engineers on a 4 month-long project.",
-            "The application was developed in TypeScript using the Angular framework.",
-            "Every change was tested in a development GitLab branch before being deployed to the main branch.",
-            "Developed a test suite for the application, including unit tests and integration tests."]}
-            detailsTitle="Details"
-          />
-          <br />
-          <ResumeComponent
-            date="Jan 2020 – May 2020"
-            title="Embedded System Project"
-            subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["Programming a robot to do specific tasks such as detecting and avoiding obstacles (C and C++).", 
-            "Experience working in a team on a big project.", 
-            "Used VMWare running Linux to test the functionality of the robot while the robot was not available for use.",
-            "Experience integrating software changes to the physical robot (Arduino)."]}
-            detailsTitle="Details"
-          />
-        </div>
-    );
-}
-
-export function PersonalProjectsComponent() {
-  return (
-    <div className='Info-block' style={{ textAlign: 'left', marginLeft: '20px' }}>
-        <RevealText>
-            <h1 className='Block-title'>Personal Projects</h1>
-        </RevealText>
-        <ResumeComponent
             date="March 2024"
             title="This Web App 😊"
             subtitle={null}
@@ -220,35 +136,81 @@ export function PersonalProjectsComponent() {
             "Developed in an Agile lifecycle, using Jira SCRUM board to keep track of tasks and GitHub for version control."]}
             detailsTitle="Details"
           />
-    </div>
-  );
-}
-
-export function ExtracurricularComponent() {
-  return (
-    <div className='Info-block' style={{ textAlign: 'left', marginLeft: '20px' }}>
-        <RevealText>
-            <h1 className='Block-title'>Extracurricular Activities</h1>
-        </RevealText>
-        <ResumeComponent
-            date="Sep 2019 – Sep 2020"
-            title="Formule Polytechnique Montréal"
+          <br />
+          <ResumeComponent
+            date="Sep 2023 - Dec 2023"
+            title="Project Scaling Databases and Implementing Cloud Design Patterns"
             subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["Participating in the Formula SAE team.", 
-            "Experience with VMWare ESXi and Jira."]}
+            location={null}
+            details={["Experience deploying Dockerized applications to AWS instances, creating load balancers, etc. using Terraform.", 
+            "Experience applying software design patterns in a cloud environment, such as Proxy, Gatekeeper, etc.", 
+            "Highest grade in the class with an average of 96.8%."]}
             detailsTitle="Details"
           />
-        <br />
-        <ResumeComponent
-            date="Oct 2022"
-            title="School Merchandise"
+          <br />
+          <ResumeComponent
+            date="April 2023"
+            title="Diamond price predictor"
             subtitle={null}
-            location="École Polytechnique Montréal"
-            details={["Designed merchandise for the computer and software engineering department of my university.", 
-            "Used Adobe Photoshop."]}
+            location={null}
+            details={["Implemented a machine learning algorithm that accurately predicts the price of  diamonds based on their attributes.", 
+            "Used a previous dataset to feed the machine learning model.", 
+            "Programmed in Julia."]}
             detailsTitle="Details"
           />
-    </div>
-  );
+          <br />
+          <ResumeComponent
+            date="Jan 2023 – April 2023"
+            title="Data visualization project"
+            subtitle={null}
+            location={null}
+            details={["In depth data analysis of the Argentinian national team’s performance during the 2022 World Cup, mandated by the Montreal based company Sports AI.", 
+            "Used Python to develop the app, Pandas framework to collect and sort data and Plotly to create graphs and charts.", 
+            "Worked in a team of 6 engineers. Displayed leadership skills by organizing and leading meetings and ensuring that the project is being completed properly and on time. Used GitLab to push changes.",
+            <a href="https://inf8808-project.onrender.com/" target="_blank" rel="noreferrer" className='project-link'><li>Click here to view project</li></a>
+          ]}
+            detailsTitle="Details"
+          />
+          <br />
+          <ResumeComponent
+            date="Jan 2022 – May 2022"
+            title="Web/mobile app with social features"
+            subtitle={null}
+            location={null}
+            details={["A continuation of the web design project from the previous year, with added online collaboration features and cross-platform capabilities between Android and Windows.", 
+            "User modifications were done in real time by pushing each brushstroke to a Firebase real time database which were then visible to each user of the application.", 
+            "Used my leadership skills to organize and manage the project throughout the semester.",
+            "Used Jira to assign tasks and to indicate their completion.",
+            "Used Kotlin to develop the Android version. This helped me learn how to implement features involving an Android device’s hardware as well as experience developing a mobile application.",
+            "Every change was pushed to GitLab."]}
+            detailsTitle="Details"
+          />
+          <br />
+          <ResumeComponent
+            date="Jan 2021 – May 2021"
+            title="Web Development Project"
+            subtitle={null}
+            location={null}
+            details={["Creating a web app like MS Paint where users can create digital art.", 
+            "Showed strong leadership skills by encouraging the team members to reach a common goal, actively listening to feedback, organizing and leading meetings and ensuring that tasks were properly completed before the deadline.", 
+            "Gained a lot of experience working in a team of 6 engineers on a 4 month-long project.",
+            "The application was developed in TypeScript using the Angular framework.",
+            "Every change was tested in a development GitLab branch before being deployed to the main branch.",
+            "Developed a test suite for the application, including unit tests and integration tests."]}
+            detailsTitle="Details"
+          />
+          <br />
+          <ResumeComponent
+            date="Jan 2020 – May 2020"
+            title="Embedded System Project"
+            subtitle={null}
+            location={null}
+            details={["Programming a robot to do specific tasks such as detecting and avoiding obstacles (C and C++).", 
+            "Experience working in a team on a big project.", 
+            "Used VMWare running Linux to test the functionality of the robot while the robot was not available for use.",
+            "Experience integrating software changes to the physical robot (Arduino)."]}
+            detailsTitle="Details"
+          />
+        </div>
+    );
 }

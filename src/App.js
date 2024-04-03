@@ -4,7 +4,7 @@ import { ReactComponent as LinkedInSvg } from './assets/icons/linkedin.svg';
 import './App.css';
 import { TypeAnimation } from 'react-type-animation';
 import { DelayedReveal, VeryDelayedReveal, WriteText, Languages } from './MotionComponents.tsx';
-import { EducationComponent, WorkComponent, HackathonComponent, SchoolProjectsComponent, PersonalProjectsComponent, ExtracurricularComponent } from './ResumeComponents.tsx';
+import { EducationComponent, WorkComponent, HackathonComponent, ProjectsComponent, ExtracurricularComponent } from './ResumeComponents.tsx';
 import { LottieScrollDown } from './LottieComponents.tsx';
 
 function App() {
@@ -77,13 +77,7 @@ function App() {
         <HackathonComponent />
         <br />
         <br />
-        <SchoolProjectsComponent />
-        <br />
-        <br />
-        <PersonalProjectsComponent />
-        <br />
-        <br />
-        <ExtracurricularComponent />
+        <ProjectsComponent />
         <br />
         <br />
       </div>
